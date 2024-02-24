@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- script -->
+    <script type="module" src="./src/app.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Focus timer style pomodoro">
+    <title>Focus Timer v2</title>
+</head>
+<body>
+    <div id="app">
+        <section id="display">
+            <div id="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div id="controls">
+                <button id="play" class="control-btn">
+                    <i class="ph-bold ph-play-circle disable"></i>
+                </button>
+                <button id="stop" class="control-btn">
+                    <i class="ph-bold ph-stop-circle disable"></i>
+                </button>
+                <button id="increase" class="control-btn">
+                    <i class="ph-bold ph-plus-circle"></i>
+                </button>
+                <button id="decrease" class="control-btn">
+                    <i class="ph-bold ph-minus-circle"></i>
+                </button>
+            </div>
+        </section>
+        <section id="bg-sounds">
+            <div id="florest" class="sound-card">
+                <i class="ph-duotone ph-tree"></i>
+            </div>
+            <div id="rain" class="sound-card">
+                <i class="ph-duotone ph-cloud-rain"></i>
+            </div>
+            <div id="coffe-shop" class="sound-card">
+                <i class="ph-duotone ph-storefront"></i>
+            </div>
+            <div id="fireplace" class="sound-card">
+                <i class="ph-duotone ph-campfire"></i>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
